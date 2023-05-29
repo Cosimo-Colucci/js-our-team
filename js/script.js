@@ -74,10 +74,10 @@ const domEl = document.querySelector("body");
 
 for (let index = 0; index < ourTeam.length; index++) {
     const teamMate = ourTeam[index];
-    teamMate.innerHTMl("vrvo")
+    
     const newString = document.createElement("p");
 
 
     domEl.appendChild (newString);
-    console.log(teamMate.name, "/", teamMate.position, "/", teamMate["img string"])
+    newString.innerHTML = (teamMate.name + " " + "/" + " " + teamMate.position + " " + "/" + " " + teamMate["img string"])
 }
