@@ -66,3 +66,18 @@ for (let index = 0; index < ourTeam.length; index++) {
     const teamMate = ourTeam[index];
     console.log(teamMate.name, "/", teamMate.position, "/", teamMate["img string"])
 }
+
+// MILESTONE 2:
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+const domEl = document.querySelector("body");
+
+for (let index = 0; index < ourTeam.length; index++) {
+    const teamMate = ourTeam[index];
+    teamMate.innerHTMl("vrvo")
+    const newString = document.createElement("p");
+
+
+    domEl.appendChild (newString);
+    console.log(teamMate.name, "/", teamMate.position, "/", teamMate["img string"])
+}
